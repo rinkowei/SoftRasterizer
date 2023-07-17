@@ -26,8 +26,8 @@ include_directories(
         "${THIRD_PARTY_DIR}/glfw/include"
         "${THIRD_PARTY_DIR}/glad/include"
         "${THIRD_PARTY_DIR}/glm"
-        "${THIRD_PARTY_DIR}/assimp/include"
-        "${THIRD_PARTY_DIR}/assimp/contrib"
+        "${THIRD_PARTY_DIR}/assimp-5.2.5/include"
+        "${THIRD_PARTY_DIR}/assimp-5.2.5/contrib"
         "${THIRD_PARTY_DIR}/imgui"
         "${THIRD_PARTY_DIR}/json11"
         "${THIRD_PARTY_DIR}/md5"
@@ -51,7 +51,7 @@ set(ASSIMP_BUILD_ALL_IMPORTERS_BY_DEFAULT FALSE)
 set(ASSIMP_BUILD_OBJ_IMPORTER TRUE)
 set(ASSIMP_BUILD_GLTF_IMPORTER TRUE)
 
-add_subdirectory(${THIRD_PARTY_DIR}/assimp)
+add_subdirectory(${THIRD_PARTY_DIR}/assimp-5.2.5)
 
 
 # glslang
